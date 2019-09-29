@@ -16,10 +16,10 @@ class Exercise::ArraysTest < Minitest::Test
   def test_bin_search
     skip
     assert Exercise::Arrays.search([1], 900) == -1
-    assert Exercise::Arrays.search([1], 1) == 0
+    assert Exercise::Arrays.search([1], 1).zero?
     assert Exercise::Arrays.search([], 900) == -1
     assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 9) == 5
-    assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 1) == 0
+    assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 1).zero?
     assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 6) == -1
 
     array = (1..10000).to_a
