@@ -2,14 +2,13 @@ module Exercise
   module Arrays
     class << self
       def replace(array)
-        array.map { |x| x.positive? ? 100 : x }
+        max = array.max
+        array.map { |x| x.positive? ? max : x }
       end
 
-      def search(_array, _query)
-        _array.each do |x|
-          return _array.find_index(x) if x == _query
-        end
-        -1
+      def search(array, query)
+        query_index = array.find_index(query)
+        query_index.nil? ? -1 : query_index
       end
     end
   end
