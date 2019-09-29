@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.3.7'
+ruby '2.6.4'
 
-gem 'rake'
-gem 'minitest'
-gem 'factory_girl'
 gem 'coveralls', require: false
-gem 'rubocop', require: false
+gem 'factory_girl'
+gem 'minitest'
 gem 'rack'
-gem 'test-unit'
 gem 'rack-test'
+gem 'rake'
+gem 'rubocop', require: false
+gem 'test-unit'
