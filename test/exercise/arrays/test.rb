@@ -16,6 +16,8 @@ class Exercise::ArraysTest < Minitest::Test
     assert Exercise::Arrays.search([1], 900) == -1
     assert Exercise::Arrays.search([1], 1).zero?
     assert Exercise::Arrays.search([], 900) == -1
+    assert Exercise::Arrays.search([1, 2, 4, 5, 7, 8, 9], 9) == 6
+    assert Exercise::Arrays.search([1, 2, 4, 5, 7, 8, 9], 6) == -1
     assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 9) == 5
     assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 1).zero?
     assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 6) == -1
