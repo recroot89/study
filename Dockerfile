@@ -1,4 +1,4 @@
-FROM ruby:2.3.7-stretch
+FROM ruby:2.7.0
 
 RUN apt-get update -qq
 RUN apt-get install locales -y
